@@ -1,3 +1,6 @@
+html{
+  background-color: #f7f6f6;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +38,34 @@
   to {
     transform: rotate(360deg);
   }
+}
+.app__form{
+  padding:20px;
+  position: fixed;
+  bottom:0;
+  background-color: #0b81ff;
+  /* display: flex; */
+  z-index: 1;
+  width: 100%;
+}
+.app__formcontrol{
+  display: flex !important;
+  flex-direction:  row !important;
+}
+.app__input{
+  flex: 0.98;
+}
+.app__icon{
+  flex: 0;
+  color: white !important;
+}
+/* .MuiInputBase-root.MuiInput-root.MuiInput-underline.input__form.MuiInputBase-formControl.MuiInput-formControl{
+  flex: 0.98;
+} */
+input.MuiInputBase-input.MuiInput-input::placeholder{
+  color: white;
+  opacity: 0.8;
+}
+.MuiInput-underline:before{
+  border-color: white !important;
 }
